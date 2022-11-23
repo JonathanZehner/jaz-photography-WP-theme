@@ -1,0 +1,390 @@
+/*
+Theme Name: NWD Photography
+Theme URI:
+Author: Jonathan A. Zehner
+Author URI: www.nomadwebdesigns.com
+Description: Theme for photographers to display their work for everyone to see.
+Version: 1.0.0
+License: GNU General Public License v2 or Later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+Text Domain: pro-photography
+*/
+
+/*==============================================================================
+
+                                Universal Styling
+
+==============================================================================*/
+/* ---------- Reset Rule ---------- */
+* {
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------------------------
+
+                                Fonts Information
+
+// Adobe Fonts Typekit
+
+Serif Fonts:
+    Mrs Eaves XL: 'mrs-eaves-xl-serif'
+    designed by: Zuzana Licko
+    from: Emigre
+
+Sans-serif Fonts:
+    Bilo: 'bilo'
+    designed by: Pieter van Rosmalen
+    from: Bold Monday
+
+    Mr Eaves Modern: 'mr-eaves-modern'
+    Mr Eaves Sans: 'mr-eaves-sans'
+    designed by: Zuzana Licko
+    from: Emigre
+
+    New Hero: 'new-hero'
+    designed by: unknown
+    from: Newlyn
+
+    Poiret One: 'poiret-one'
+    designed by: Denis Marsharov 
+    from: Google
+
+    Quasimoda: 'quasimoda'
+    designed by: Botio Nikoltchev
+    from: Lettersoup
+
+Script Fonts:
+    Hello My Love: 'hello-my-love-pro'
+    designed by and from: Debi Sementelli
+
+-----------------------------------------------------------------------------*/
+
+
+/* ---------- Sticky Footer ---------- */
+html, 
+body {
+    height: 100%;/* Sticky Footer */
+}
+
+body {
+    color: #1e2223;
+    display: flex; /* Sticky Footer */
+    flex-direction: column;/* Sticky Footer */
+    font: normal normal 1em/1.5 'bilo', helvetica, sans-serif;
+}
+
+.content {
+    flex: 1 0 auto;/* Sticky Footer */
+    width: 100%;/* Sticky Footer */
+}
+
+.footer {
+    flex-shrink: 0;/* Sticky Footer */
+}
+
+/*------------------------------------------------------------------------------
+                                Header Styling
+------------------------------------------------------------------------------*/
+
+header {
+    background-color: #1e2223;
+    padding: 25px 1%;
+}
+
+header .container {
+    margin: 0 auto;
+}
+
+header .row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto 0 0;
+}
+
+header .logo-container {
+    margin-left: 0;
+    padding-left: 0;
+    width: 45%;
+}
+
+header .logo {
+    height: auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+header .sub-nav-menu {
+    display: none;
+    margin-right: 0;
+}
+
+header .navigation {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 75%;
+}
+
+header .navigation ul {
+    justify-content: space-evenly;
+}
+
+header .navigation a {
+    color: #c1d3d9;
+    text-decoration: none;
+}
+
+header #mega-menu-wrap-main-menu #mega-menu-main-menu>li.mega-menu-item>a.mega-menu-link {
+    font: normal 1.5rem/1.5 'bilo';
+}
+
+/*------------------------------------------------------------------------------
+                                Body Styling
+------------------------------------------------------------------------------*/
+
+h1 {
+    font-size: 2rem;
+}
+
+h2, h3, h4, h5, h6 {
+    font: normal 400 1.5rem/1.5 'new-hero', helvetica, sans-serif;
+}
+
+h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #1e2223;
+    text-decoration: none;
+}
+
+.featured-image img {
+    height: auto;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #1e2223;
+    text-decoration: none;
+    transition: .2s;
+}
+
+a:hover {
+    font-size: 1.05rem;
+    text-decoration: underline;
+    transition: .2s;
+}
+
+.blog main,
+.individual-blog-post {
+    padding-top: 15px;
+}
+
+.individual-blog-post .featured-image img {
+    box-shadow:
+            0 1px 1px hsl(0deg 0% 0% / 0.075),
+            0 2px 2px hsl(0deg 0% 0% / 0.075),
+            0 4px 4px hsl(0deg 0% 0% / 0.075),
+            0 8px 8px hsl(0deg 0% 0% / 0.075),
+            0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.individual-post img {
+    box-shadow:
+            0 1px 1px hsl(0deg 0% 0% / 0.075),
+            0 2px 2px hsl(0deg 0% 0% / 0.075),
+            0 4px 4px hsl(0deg 0% 0% / 0.075),
+            0 8px 8px hsl(0deg 0% 0% / 0.075),
+            0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.individual-post a h2 {
+    color: #2b2e2e;
+}
+
+.individual-post a p {
+    color: #1e2223;
+}
+
+.sidebar-widget-container img {
+    box-shadow:
+            0 1px 1px hsl(0deg 0% 0% / 0.075),
+            0 2px 2px hsl(0deg 0% 0% / 0.075),
+            0 4px 4px hsl(0deg 0% 0% / 0.075),
+            0 8px 8px hsl(0deg 0% 0% / 0.075),
+            0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+
+/*------------------------------------------------------------------------------
+                                Footer Styling
+------------------------------------------------------------------------------*/
+
+footer {
+    background-image: linear-gradient(to bottom, transparent, #c1d3d9);
+    margin: 0;
+    padding: 25px 0 10px;
+    width: 100%;
+}
+
+footer .row {
+    flex-wrap: wrap;
+}
+
+footer .footer-widget-container li {
+    padding-top: 10px;
+}
+
+footer .footer-widget-container h2,
+footer .footer-widget-container p {
+    font-size: 0.8rem;
+}
+
+footer .left-footer-widget-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer .menu-left-footer-menu-container ul {
+    padding: 0;
+}
+
+footer .middle-footer-container {
+    width: 45%;
+    margin: 0 auto;
+}
+
+footer .middle-footer-container .norm_row {
+    width: 300px !important;
+}
+
+footer .middle-footer-menu {
+    width: 100%;
+}
+
+footer .menu-middle-footer-menu-container ul {
+    display: flex;
+    padding: 0;
+}
+
+/*==============================================================================
+
+                                Home/Hero Page Styling (desktop)
+
+==============================================================================*/
+
+.hero-container {
+    position: relative;
+}
+
+.hero-image {
+    margin-bottom: 30px;
+}
+
+.hero-image img {
+    max-height: 728px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Linear Gradient to add graininess to hero img with */
+.hero-image:before {
+    background-image: linear-gradient(to bottom, transparent, transparent,transparent, transparent, #ffffffc4);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+.hero-title {
+    bottom: 20px;
+    color: #1e2223;
+    left: 0;
+    padding-left: 7px;
+    position: absolute;    
+    right: 0;
+    text-transform: uppercase;
+}
+
+.hero-title h2 {
+    font: normal 400 2rem/1.5 'bilo', sans-serif;
+}
+
+/*==============================================================================
+
+                                Contact Page Styling (desktop)
+
+==============================================================================*/
+main .contact-form .wpforms-container-full .wpforms-form {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+/*==============================================================================
+
+                                404 Page Styling
+
+==============================================================================*/
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+}
+
+.page_404 img {
+    width: 100%;
+}
+
+.four_zero_four_bg {
+    background-image:
+        url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+}
+
+
+.four_zero_four_bg h2 {
+    font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+.link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.contant_box_404 {
+    margin-top: -50px;
+}
+
+/*==============================================================================
+
+                                Media Queries
+
+==============================================================================*/
+
+/*------------------------------------------------------------------------------
+
+                    Begin Min-Width (768px) Media Query
+
+------------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+
+/*-- Header --*/
+    header .sub-nav-menu {
+        display: block;
+    }
+}
